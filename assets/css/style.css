@@ -41,12 +41,12 @@
     background-color: aquamarine;
 } */
 
-.debug .right-sections{
+/* .debug .right-sections{
     height: 600px;
     border: 1px solid black;
     background-color: rgb(241, 162, 222);
 }
-
+ */
 /* .debug .card{
     border: 1px solid black;
     height: 300px;
@@ -132,3 +132,12 @@ body{
 
 
 /* #endregion faq */
+
+/* #region checklist */
+
+
+/* #endregion checklist */
+
+/* #region chart */
+
+/* #endregion chart */
