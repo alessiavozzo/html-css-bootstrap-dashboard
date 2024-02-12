@@ -175,6 +175,10 @@ table .btn{
     color: var(--dash-dark);
 }
 
+td:has(.btn){
+    min-width: 6.5rem;
+}
+
 /* #endregion next-classes-card */
 
 /* #region faq */
