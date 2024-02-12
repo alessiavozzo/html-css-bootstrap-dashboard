@@ -70,6 +70,21 @@ body{
 
 /* #endregion common rules */
 
+/* #region utility */
+
+@media screen and (min-width: 768px) {
+    .w-md-30{
+        width: 30%!important;
+    }
+
+    .w-md-20{
+        width: 20%!important;
+    }
+}
+
+
+/* #endregion utility */
+
 
 /* #region header */
 
@@ -119,6 +134,13 @@ body{
 .badge.rounded-pill.bool-badge{
     background-color:  rgba(5, 30, 52, 0.37);
 }
+
+@media screen and (min-width: 992px){
+    .offcanvas.offcanvas-end{
+        width: 50%!important;
+    }        
+}
+
 
 /* #endregion top banner */
 

@@ -159,9 +159,129 @@
                         <!-- new student -->
                         <div
                             class="new-student d-flex align-items-center justify-content-md-center align-self-start gap-3 py-2 py-md-0 order-md-last col-12 col-md-3 col-lg-3">
+
                             <span>Nuovo Studente</span>
-                            <i class="fa-solid fa-plus border rounded p-2"></i>
+
+                            <button class="btn border rounded text-white" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+                            <!-- off-canvas -->
+
+                            <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close">
+                                    </button>
+                                </div>
+
+                                <div class="offcanvas-body">
+                                    <form action="" method="post">
+                                        <div class="row row-cols-1 row-cols-md-2 gy-3">
+
+                                            <!-- nome -->
+                                            <div class="col">
+                                                <label for="name" class="form-label">Nome</label>
+                                                <input type="text" id="name" class="form-control"
+                                                    aria-label="First name" required>
+                                            </div>
+
+                                            <!-- cognome -->
+                                            <div class="col">
+                                                <label for="surname" class="form-label">Cognome</label>
+                                                <input type="text" id="surname" class="form-control"
+                                                    aria-label="Last name" required>
+                                            </div>
+
+                                            <!-- email -->
+                                            <div class="col">
+                                                <label for="email" class="form-label">Email</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text" id="addon-wrapping">@</span>
+                                                    <input type="email" id="email" class="form-control"
+                                                        aria-label="Email" required>
+                                                </div>
+                                            </div>
+
+                                            <!-- password -->
+                                            <div class="col">
+                                                <label for="password" class="form-label">Password</label>
+                                                <input type="text" id="password" class="form-control"
+                                                    aria-label="password" required minlength="8">
+                                            </div>
+
+                                            <!-- address -->
+                                            <div class="col w-100">
+                                                <label for="address" class="form-label">Indirizzo</label>
+                                                <input type="text" id="address" class="form-control"
+                                                    aria-label="address" required>
+                                            </div>
+
+                                            <!-- city -->
+                                            <div class="col">
+                                                <label for="city" class="form-label">Città</label>
+                                                <input type="text" id="city" class="form-control" aria-label="city"
+                                                    required>
+                                            </div>
+
+                                            <!-- state -->
+                                            <div class="state w-md-30">
+                                                <label for="state" class="form-label">Stato</label>
+                                                <select class="form-select" id="state"
+                                                    aria-label="Default select example">
+                                                    <option selected>Scegli...</option>
+                                                    <option value="1">Italia</option>
+                                                    <option value="2">Spagna</option>
+                                                    <option value="3">Francia</option>
+                                                    <option value="3">Germania</option>
+                                                    <option value="3">Finlandia</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- cap -->
+                                            <div class="w-md-20">
+                                                <label for="cap" class="form-label">CAP</label>
+                                                <input type="text" id="cap" class="form-control" aria-label="cap"
+                                                    required>
+                                            </div>
+
+                                            <!-- pic -->
+                                            <div class="w-100">
+                                                <label for="file" class="form-label">Foto</label>
+                                                <input class="form-control" type="file" id="file">
+                                            </div>
+
+                                            <!-- checkbox -->
+                                            <div class="check w-100">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- btn actions -->
+                                            <div class="actions">
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                <button type="button" class="btn btn-warning">Svuota</button>
+                                            </div>
+
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+
+
                         </div>
+                        
 
                         <!-- boolean-apps-badges -->
                         <div class="boolean-apps py-2 py-md-0 col-12 col-md-3 col-lg-6 align-self-baseline">
@@ -199,10 +319,6 @@
                                         </a>
                                     </li>
                                 </ul>
-
-
-
-
 
                             </div>
 
@@ -563,11 +679,13 @@
                                 <div class="stats-chart card p-3">
                                     <div class="card">
 
-                                        <img src="./assets/img/stats.jpeg" class="card-img-top img-fluid" alt="stats-chart-2019">
+                                        <img src="./assets/img/stats.jpeg" class="card-img-top img-fluid"
+                                            alt="stats-chart-2019">
 
                                         <div class="card-body">
                                             <h5 class="card-title">Utenti attivi</h5>
-                                            <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                            <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo
+                                                mese</p>
                                         </div>
 
                                         <ul class="list-group list-group-flush">
