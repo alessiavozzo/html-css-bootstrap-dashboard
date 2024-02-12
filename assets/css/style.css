@@ -1,3 +1,11 @@
+/* #region debug */
+
+.debug header{
+    height: 100px;
+    background-color: aliceblue;
+}
+
+
 
 /* #region common rules */
 body{
@@ -6,4 +14,3 @@ body{
 
 
 /* #endregion common rules */
-
