@@ -72,7 +72,7 @@ body{
 
 /* #region utility */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .w-md-30{
         width: 30%!important;
     }
@@ -82,7 +82,7 @@ body{
     }
 }
 
-
+ */
 /* #endregion utility */
 
 
@@ -120,6 +120,14 @@ body{
 #left-sidebar{
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--dash-sidebar);
+
+    & li:has(.nav-link):hover{
+        background-color: rgba(255, 255, 255, 0.384);
+    }
+
+    & .settings > .nav-link:hover{
+        background-color: rgba(255, 255, 255, 0.384);
+    }
 }
 
 /* #endregion sidebar */
@@ -141,6 +149,14 @@ body{
     }        
 }
 
+.new-student > .btn:hover{
+    background-color: white;
+    
+    > i{
+        color: black;
+    }
+}
+
 
 /* #endregion top banner */
 
@@ -153,6 +169,10 @@ body{
 
 .next-classes tbody th, td{
     vertical-align: middle;
+}
+
+table .btn{
+    color: var(--dash-dark);
 }
 
 /* #endregion next-classes-card */
