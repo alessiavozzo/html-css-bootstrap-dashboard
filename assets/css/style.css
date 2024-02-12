@@ -5,12 +5,51 @@
     background-color: aliceblue;
 }
 
+.debug #left-sidebar{
+    background-color: lightskyblue;
+    border: 1px solid black;
+}
+
+.debug #top-banner{
+    height: 150px;
+    border: 1px solid black;
+    background-color: lightsalmon;
+}
+
+.debug #main-sections{
+    background-color: lightgray;
+}
+
+.debug .left-sections{
+    height: 600px;
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+
+.debug .right-sections{
+    height: 600px;
+    border: 1px solid black;
+    background-color: rgb(241, 162, 222);
+}
 
 
 /* #region common rules */
 body{
     font-family: 'Roboto', sans-serif;
+    height: 100vh;
 }
 
+#left-sidebar{
+    height: 100%;
+}
+
+#right-main{
+    overflow-y: auto;
+    background-color: lightgrey;
+}
+
+#main-sections{    
+    height: 100%;
+}
 
 /* #endregion common rules */
