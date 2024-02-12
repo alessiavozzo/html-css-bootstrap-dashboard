@@ -91,6 +91,14 @@ body{
 
 /* #endregion header */
 
+/* #region site-main */
+
+#site_main{
+    padding-top: 4rem;
+}
+
+/* #endregion site-main */
+
 /* #region sidebar */
 
 
