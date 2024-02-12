@@ -1,9 +1,21 @@
+/* #region color palette */
+:root{
+    --dash-lighter: rgba(248, 249, 250, 1);
+    --dash-light: rgba(229, 229, 229, 1);
+    --dash-notice: rgba(255, 143, 0, 1);
+    --dash-dark: rgba(91, 88, 88, 1);
+}
+
+
+/* #endregion color palette */
+
+
 /* #region debug */
 
-.debug header{
+/* .debug header{
     height: 100px;
     background-color: aliceblue;
-}
+} */
 
 .debug #left-sidebar{
     background-color: lightskyblue;
@@ -57,6 +69,19 @@ body{
 
 
 /* #region header */
+
+#site_header{
+    background-color: var(--dash-lighter);
+
+    & .nav-center .form-control, .input-group-text{
+        background-color: var(--dash-light);
+    }
+
+    & .nav-link:has(.fa-bell){
+        color: var(--dash-notice);
+    }
+}
+
 .nav-link:has(.fa-bell)::after{
     display: none;
 }
