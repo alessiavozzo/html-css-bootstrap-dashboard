@@ -4,7 +4,9 @@
     --dash-light: rgba(229, 229, 229, 1);
     --dash-notice: rgba(255, 143, 0, 1);
     --dash-dark: rgba(91, 88, 88, 1);
+    --dash-sidebar: rgba(5, 30, 52, 1);
 }
+
 
 
 /* #endregion color palette */
@@ -17,11 +19,11 @@
     background-color: aliceblue;
 } */
 
-.debug #left-sidebar{
+/* .debug #left-sidebar{
     background-color: lightskyblue;
     border: 1px solid black;
 }
-
+ */
 .debug #top-banner{
     height: 150px;
     border: 1px solid black;
@@ -85,3 +87,14 @@ body{
 .nav-link:has(.fa-bell)::after{
     display: none;
 }
+
+/* #endregion header */
+
+/* #region sidebar */
+
+#left-sidebar{
+    background-image: url(../img/sidebar-bg.png);
+    background-color: var(--dash-sidebar);
+}
+
+/* #endregion sidebar */
