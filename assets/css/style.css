@@ -45,13 +45,8 @@ body{
     height: 100vh;
 }
 
-#left-sidebar{
-    height: 100%;
-}
-
 #right-main{
     overflow-y: auto;
-    background-color: lightgrey;
 }
 
 #main-sections{    
@@ -59,3 +54,9 @@ body{
 }
 
 /* #endregion common rules */
+
+
+/* #region header */
+.nav-link:has(.fa-bell)::after{
+    display: none;
+}
