@@ -32,6 +32,12 @@
     background-color: rgb(241, 162, 222);
 }
 
+.debug .card{
+    border: 1px solid black;
+    height: 300px;
+}
+
+/* #endregion debug */
 
 /* #region common rules */
 body{
