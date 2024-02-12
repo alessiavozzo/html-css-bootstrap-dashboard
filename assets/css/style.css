@@ -103,6 +103,7 @@ body{
 
 /* #region top banner */
 
+
 #top-banner{
     background-color: var(--dash-banner);
 }
@@ -112,3 +113,14 @@ body{
 }
 
 /* #endregion top banner */
+
+
+/* #region next-classes-card */
+
+.next-classes thead th:not(:first-of-type), tbody td{
+    text-align: center;
+}
+
+.next-classes tbody th, td{
+    vertical-align: middle;
+}
