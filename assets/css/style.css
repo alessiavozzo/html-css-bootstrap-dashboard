@@ -5,6 +5,7 @@
     --dash-notice: rgba(255, 143, 0, 1);
     --dash-dark: rgba(91, 88, 88, 1);
     --dash-sidebar: rgba(5, 30, 52, 1);
+    --dash-banner: #1b72e8;
 }
 
 
@@ -24,16 +25,16 @@
     border: 1px solid black;
 }
  */
-.debug #top-banner{
+/* .debug #top-banner{
     height: 150px;
     border: 1px solid black;
     background-color: lightsalmon;
-}
+} */
 
-.debug #main-sections{
+/* .debug #main-sections{
     background-color: lightgray;
 }
-
+ */
 .debug .left-sections{
     height: 600px;
     border: 1px solid black;
@@ -92,9 +93,22 @@ body{
 
 /* #region sidebar */
 
+
 #left-sidebar{
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--dash-sidebar);
 }
 
 /* #endregion sidebar */
+
+/* #region top banner */
+
+#top-banner{
+    background-color: var(--dash-banner);
+}
+
+.badge.rounded-pill.bool-badge{
+    background-color:  rgba(5, 30, 52, 0.37);
+}
+
+/* #endregion top banner */
