@@ -112,6 +112,10 @@ body{
     padding-top: 4rem;
 }
 
+#right-main{
+    background-color: var(--dash-lighter);
+}
+
 /* #endregion site-main */
 
 /* #region sidebar */
