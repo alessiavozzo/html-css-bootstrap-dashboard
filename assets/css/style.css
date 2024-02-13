@@ -108,11 +108,11 @@ body{
 
 /* #region site-main */
 
-#site_main{
+#wrapper{
     padding-top: 4rem;
 }
 
-#right-main{
+#site_main{
     background-color: var(--dash-lighter);
 }
 
