@@ -147,10 +147,19 @@ body{
     background-color:  rgba(5, 30, 52, 0.37);
 }
 
+@media screen and (max-width: 991px){
+    
+    #offcanvasRight{
+        width: 100%;
+    }
+}
+
+
 @media screen and (min-width: 992px){
-    .offcanvas.offcanvas-end{
-        width: 50%!important;
-    }        
+    
+    #offcanvasRight{
+        width: 50%;
+    }
 }
 
 .new-student > .btn:hover{
