@@ -152,7 +152,7 @@
                     </a>
                 </div>
 
-                <button class="btn border-white position-absolute top-50 text-white" id="switch">
+                <button class="btn border-white position-absolute top-50" id="switch">
                     <i class="fa-solid fa-lightbulb"></i>
                 </button>
             </div>
@@ -757,6 +757,18 @@
         document.documentElement.setAttribute('data-bs-theme','light')
     }
 })
+
+
+    var button = document.getElementById('switch');
+    var color = button.style.color;
+    button.addEventListener('click', function () {    
+    color = button.style.color = color === 'black' ? 'white' : 'black';
+});
+
+    document.getElementById('switch').addEventListener('click', function () {
+  this.style.backgroundColor = this.style.backgroundColor === 'darkgrey' ? 'var(--bs-btn-bg)' : 'darkgrey';
+});
+
 </script>
 
 </html>
