@@ -89,11 +89,12 @@ body{
 /* #region header */
 
 #site_header{
-    background-color: var(--dash-lighter);
+    border-bottom: 1px solid currentColor;
+    /* background-color: var(--dash-lighter); */
 
-    & .nav-center .form-control, .input-group-text{
+    /* & .nav-center .form-control, .input-group-text{
         background-color: var(--dash-light);
-    }
+    } */
 
     & .nav-link:has(.fa-bell){
         color: var(--dash-notice);
@@ -112,10 +113,10 @@ body{
     padding-top: 4rem;
 }
 
-#site_main{
+/* #site_main{
     background-color: var(--dash-lighter);
 }
-
+ */
 /* #endregion site-main */
 
 /* #region sidebar */
@@ -133,6 +134,7 @@ body{
         background-color: rgba(255, 255, 255, 0.384);
     }
 }
+
 
 /* #endregion sidebar */
 
